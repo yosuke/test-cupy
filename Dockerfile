@@ -62,5 +62,4 @@ RUN source ~/.bashrc && pip install -U cupy-cuda101==6.0.0 chainer==6.0.0 chaine
 
 COPY test.py /test.py
 
-
 CMD python /test.py
