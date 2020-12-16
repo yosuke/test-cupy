@@ -8,7 +8,6 @@ ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility,graphics
 ENV NVIDIA_REQUIRE_CUDA "cuda>=10.1 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411 brand=tesla,driver>=418,driver<419"
 ENV NCCL_VERSION 2.4.8
-ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs
 ENV CUDNN_VERSION 7.6.5.32
 
 RUN apt-get update && apt-get install -y curl
